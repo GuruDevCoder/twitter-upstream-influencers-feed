@@ -1,0 +1,73 @@
+{
+  "name": "twitter-upstream-influencers",
+  "version": "0.1.0",
+  "private": true,
+  "main": "build/server/index.js",
+  "devDependencies": {
+    "axios-mock-adapter": "^1.9.0",
+    "babel-cli": "6.26.0",
+    "babel-core": "6.26.0",
+    "babel-preset-env": "1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "enzyme": "^3.1.1",
+    "enzyme-adapter-react-16": "^1.0.4",
+    "mock-socket.io": "^1.1.0",
+    "nodemon": "^1.12.1",
+    "react-scripts": "1.0.17",
+    "sinon": "^4.1.1",
+    "standard": "^10.0.3"
+  },
+  "dependencies": {
+    "axios": "^0.17.0",
+    "body-parser": "^1.15.2",
+    "cookie-parser": "^1.4.3",
+    "express": "4.16.2",
+    "express-logger": "0.0.3",
+    "express-session": "^1.14.1",
+    "moment": "^2.19.1",
+    "mongoose": "4.13.0",
+    "oauth": "^0.9.14",
+    "prop-types": "^15.6.0",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "socket.io": "^2.0.4",
+    "socket.io-client": "2.0.4",
+    "timeago.js": "^3.0.2",
+    "twitter": "^1.2.0",
+    "util-inspect": "^0.1.8"
+  },
+  "scripts": {
+    "start-dev": "react-scripts start",
+    "start": "node build/server/index.js",
+    "prestart": "npm run -s build && npm run -s build-server",
+    "build-server": "babel src/server -s -D -d build/server",
+    "build": "react-scripts build",
+    "test": "standard && jest",
+    "standard": "standard --fix",
+    "dev": "nodemon -w src --exec \"babel-node src\""
+  },
+  "jest": {
+    "rootDir": "./",
+    "moduleDirectories": [
+      "node_modules"
+    ],
+    "moduleNameMapper": {
+      "moduleFileExtensions": [
+        "js"
+      ],
+      "\\.(cssm|scssm|css)$": "identity-obj-proxy"
+    },
+    "setupFiles": [
+      "./tests/setup.js"
+    ],
+    "testMatch": [
+      "**/?(*)(_test).js?(x)"
+    ]
+  },
+  "standard": {
+    "ignore": [
+      "/build/",
+      "/dist/"
+    ]
+  }
+}

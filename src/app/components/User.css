@@ -1,0 +1,22 @@
+.User{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 32px;
+}
+
+.User-container{
+    display: flex;
+    align-items: center;
+}
+
+
+.User-content{
+    padding: 0 16px;
+}
+
+.User-avatar{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}

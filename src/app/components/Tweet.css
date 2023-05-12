@@ -1,0 +1,78 @@
+.Tweet {
+    border-bottom: 1px solid #e6ecf0;
+    background: #ffffff;
+    cursor: pointer;
+    position: relative;
+
+    max-height: 0;
+}
+
+
+.Tweet.active {
+    max-height: 225px;
+    transition: 1s max-height ease;
+}
+
+.Tweet:hover {
+    background-color: #f5f8fa;
+}
+
+.Tweet-content {
+    min-height: 51px;
+    padding: 9px 12px;
+    margin-left: 58px;
+    border-bottom: 1px solid #e6ecf0;
+}
+
+.Tweet-accountGroup {
+    color: #657786;
+}
+
+.Tweet-avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    float: left;
+    margin-top: 3px;
+    margin-left: -58px;
+}
+
+.u-textTruncate {
+    max-width: 100%;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    white-space: nowrap !important;
+    word-wrap: normal !important;
+}
+
+.Tweet-fullname {
+    font-weight: bold;
+}
+
+
+.Tweet-username {
+    color: #657786;
+}
+
+.Tweet-time {
+    color: #657786;
+    padding-right: 2px;
+}
+
+.Tweet-time a {
+    color: #657786;
+}
+
+.Tweet-time:before {
+    content: "\00b7";
+}
+
+.TweetTextSize {
+    line-height: 20px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+.Tweet-body, .Tweet-body:hover{
+    color: #14171a;
+}

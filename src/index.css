@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin: 0;
+    background: #e6ecf0;
+    color: #14171a;
+    font-size: 14px;
+}
+
+a {
+    color: #1c94e0;
+    text-decoration: none;
+}
+
+a, a:hover, a:focus, a:active {
+    color: #19CF86;
+}
+

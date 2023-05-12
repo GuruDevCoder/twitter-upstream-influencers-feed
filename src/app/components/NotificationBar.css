@@ -1,0 +1,24 @@
+.NotificationBar {
+    font-weight: bold;
+    position: fixed;
+    top: -60px;
+    width: 100%;
+    transition: 300ms top ease;
+    text-align: center;
+}
+
+.NotificationBar-content{
+    color: white;
+    background: #19CF86;
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 16px;
+}
+
+.NotificationBar.active {
+    top: 0;
+}
+
+.NotificationBar a {
+    color: white;
+}
